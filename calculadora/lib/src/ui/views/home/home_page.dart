@@ -24,6 +24,14 @@ class _HomePageState extends State<HomePage> {
       body: Column(
         children: [
           Display(),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+            TextButton(onPressed: (){}, child: Text('9')),
+            TextButton(onPressed: (){}, child: Text('9')),
+            TextButton(onPressed: (){}, child: Text('9')),
+            TextButton(onPressed: (){}, child: Text('9'))
+          ],),
           TextButton(onPressed: (){}, child: Text('9'))
         ],
       ),
