@@ -8,18 +8,47 @@ class Display extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
+      //Define espaçamento interno
       padding: const EdgeInsets.all(8.0),
       child: TextField(
       controller: _controller,
+      //Define tamanho e cor do texto/numero
+      style: TextStyle(fontSize: 40, color: Colors.white),
+      //Define o Max e Min de linhas 
+      maxLines: 3,
+      minLines: 3,
+      //Define alinhamento do texto
+      textAlign: TextAlign.end,
+
       keyboardType: TextInputType.number,
+      //Define alinhamento vertical
+      textAlignVertical: TextAlignVertical.bottom,
+
       readOnly: true,
+      //Define aparencia
       decoration: InputDecoration(
-        fillColor: Colors.green.shade100,
+        fillColor: const Color.fromARGB(255, 54, 54, 54),
         filled: true,
-      border: OutlineInputBorder(borderRadius: BorderRadius.circular(30)),
-      prefixIcon: Icon(Icons.calculate)
+
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(20),
+          borderSide: const BorderSide(
+            color: Color.fromARGB(255, 54, 54, 54),
+            width: 3
+          ),
+
+        ),
+        focusedBorder:  OutlineInputBorder( 
+          borderRadius: BorderRadius.circular(20),
+          borderSide: const BorderSide(
+            color: Colors.yellow,
+            width: 3
+          ),
+
+        ),
+
+
        ),
-       textAlign: TextAlign.right,
       )
     );
   }
