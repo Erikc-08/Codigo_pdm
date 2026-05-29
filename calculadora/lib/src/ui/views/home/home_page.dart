@@ -30,7 +30,7 @@ class _HomePageState extends State<HomePage> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-            Botao(),
+            Botao(texto: "9",),
             TextButton(onPressed: (){}, child: Text('9')),
             TextButton(onPressed: (){}, child: Text('9')),
             TextButton(onPressed: (){}, child: Text('9'))
