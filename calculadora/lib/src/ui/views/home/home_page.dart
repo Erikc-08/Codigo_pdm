@@ -1,5 +1,7 @@
+import 'package:calculadora/src/ui/views/home/widgets/botao_widget.dart';
 import 'package:calculadora/src/ui/views/home/widgets/display_widget.dart';
 import 'package:flutter/material.dart';
+
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -28,7 +30,7 @@ class _HomePageState extends State<HomePage> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-            TextButton(onPressed: (){}, child: Text('9')),
+            Botao(),
             TextButton(onPressed: (){}, child: Text('9')),
             TextButton(onPressed: (){}, child: Text('9')),
             TextButton(onPressed: (){}, child: Text('9'))
