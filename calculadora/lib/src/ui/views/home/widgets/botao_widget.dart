@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Botao extends StatelessWidget {
-  const Botao({super.key});
+  final String texto;
+  const Botao({super.key, required this.texto});
 
 @override
 Widget build(BuildContext context) {
@@ -14,7 +15,7 @@ Widget build(BuildContext context) {
         borderRadius: BorderRadius.circular(50)
       )
     ),
-     child: Text("9",
+     child: Text(texto,
      style: TextStyle(
      fontSize: 20,
      fontWeight:  FontWeight.bold,
