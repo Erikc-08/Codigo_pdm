@@ -3,14 +3,15 @@ import 'package:flutter/material.dart';
 class Botao extends StatelessWidget {
   final String texto;
   final void Function()? onPressed;
-  const Botao({super.key, required this.texto, this.onPressed});
+  final Color? backgroundColor;
+  const Botao({super.key, required this.texto, this.onPressed, this.backgroundColor});
 
 @override
 Widget build(BuildContext context) {
   return FilledButton(
-    onPressed: (){},
+    onPressed: onPressed,
     style: FilledButton.styleFrom(
-      backgroundColor: const Color.fromARGB(255, 54, 54, 54),
+      backgroundColor: backgroundColor ?? const Color.fromARGB(255, 54, 54, 54),
       fixedSize: Size(60, 60),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(50)
