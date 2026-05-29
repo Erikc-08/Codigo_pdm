@@ -19,8 +19,9 @@ class _HomePageState extends State<HomePage> {
           fontSize: 20,
           fontWeight: FontWeight.bold
         )),
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.black,
       ),
+      backgroundColor: Colors.black,
       body: Column(
         children: [
           Display(),
