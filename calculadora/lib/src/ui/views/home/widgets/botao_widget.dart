@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 class Botao extends StatelessWidget {
   final String texto;
-  const Botao({super.key, required this.texto});
+  final void Function()? onPressed;
+  const Botao({super.key, required this.texto, this.onPressed});
 
 @override
 Widget build(BuildContext context) {
