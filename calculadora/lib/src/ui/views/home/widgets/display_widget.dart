@@ -13,7 +13,7 @@ class Display extends StatelessWidget {
       child: TextField(
       controller: _controller,
       //Define tamanho e cor do texto/numero
-      style: TextStyle(fontSize: 40, color: Colors.white),
+      style: TextStyle(fontSize: 60, color: Colors.white),
       //Define o Max e Min de linhas 
       maxLines: 3,
       minLines: 3,
@@ -31,7 +31,7 @@ class Display extends StatelessWidget {
         filled: true,
 
         enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(20),
+          borderRadius: BorderRadius.circular(50),
           borderSide: const BorderSide(
             color: Color.fromARGB(255, 54, 54, 54),
             width: 3
