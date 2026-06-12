@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 
 class Display extends StatelessWidget {
-  final _controller = TextEditingController(text: "1234");
+  final TextEditingController controller;
 
-  Display({super.key});
+  Display({super.key, required this.controller});
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       //Define espaçamento interno
-      padding: const EdgeInsets.all(18.0),
+      padding: const EdgeInsets.all(8.0),
       child: TextField(
-      controller: _controller,
+      controller: controller,
       //Define tamanho e cor do texto/numero
       style: TextStyle(fontSize: 60, color: Colors.white),
       //Define o Max e Min de linhas 
