@@ -1,3 +1,4 @@
+import 'package:calculadora/src/ui/view_Models/home_view_model.dart';
 import 'package:calculadora/src/ui/views/home/widgets/botao_widget.dart';
 import 'package:calculadora/src/ui/views/home/widgets/display_widget.dart';
 import 'package:flutter/material.dart';
@@ -11,6 +12,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  final _viewModel = HomeViewModel();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,7 +28,7 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: Colors.black,
       body: Column(
         children: [
-          Display(),
+          Display(controller: _viewModel.displayController),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
