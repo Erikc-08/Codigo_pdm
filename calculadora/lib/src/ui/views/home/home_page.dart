@@ -30,12 +30,43 @@ class _HomePageState extends State<HomePage> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-            Botao(texto: "9",onPressed: (){},),
-            TextButton(onPressed: (){}, child: Text('9')),
-            TextButton(onPressed: (){}, child: Text('9')),
-            TextButton(onPressed: (){}, child: Text('9'))
+            Botao(texto: "<",backgroundColor: Colors.grey, onPressed: (){},),
+            Botao(texto: "C",backgroundColor: Colors.grey, onPressed: (){},),
+            Botao(texto: "%",backgroundColor: Colors.grey, onPressed: (){},),
+            Botao(texto: "/",backgroundColor: Colors.orange, onPressed:(){},),
+           
           ],),
-          TextButton(onPressed: (){}, child: Text('9'))
+           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+            Botao(texto: "7", onPressed: (){},),
+            Botao(texto: "8", onPressed: (){},),
+            Botao(texto: "9", onPressed: (){},),
+            Botao(texto: "x",backgroundColor: Colors.orange, onPressed:(){},),
+          ],),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+            Botao(texto: "4", onPressed: (){},),
+            Botao(texto: "5", onPressed: (){},),
+            Botao(texto: "6", onPressed: (){},),
+            Botao(texto: "+",backgroundColor: Colors.orange, onPressed:(){},),
+          ],),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+            Botao(texto: "1", onPressed: (){},),
+            Botao(texto: "2", onPressed: (){},),
+            Botao(texto: "3", onPressed: (){},),
+            Botao(texto: "-",backgroundColor: Colors.orange, onPressed:(){},),
+          ],),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+            Botao(texto: "0", onPressed: (){},),
+            Botao(texto: ",", onPressed: (){},),
+            Botao(texto: "=",backgroundColor: Colors.orange, onPressed:(){}, width: 215,),
+          ],),
         ],
       ),
     );
