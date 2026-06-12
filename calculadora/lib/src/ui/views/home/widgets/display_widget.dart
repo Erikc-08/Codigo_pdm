@@ -9,7 +9,7 @@ class Display extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       //Define espaçamento interno
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(18.0),
       child: TextField(
       controller: _controller,
       //Define tamanho e cor do texto/numero
